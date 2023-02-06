@@ -2,7 +2,7 @@ const secondEl = document.getElementById("second");
 const minuteEl = document.getElementById("minute");
 const hourEl = document.getElementById("hour");
 
-const now = new Date("2023-02-06 09:30:00");
+const now = new Date();
 console.log(now);
 
 const tomorrow = new Date ("2023-02-07 09:30:00");
