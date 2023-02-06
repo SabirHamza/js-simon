@@ -20,13 +20,13 @@ const clock = setInterval(countdown, 1000)
 
 function countdown() {
 
-    //let timing = Math.floor(timeleft / 1000)
+    let timing = Math.floor(timeleft / 1000)
 
-    --timeleft;
+    --timing;
 
-    const second = (timeleft % 60);
-    const minute = Math.floor((timeleft / 60)) % 60;
-    const hour = Math.floor((timeleft / 60 / 60)) % 24;
+    const second = (timing % 60);
+    const minute = Math.floor((timing / 60)) % 60;
+    const hour = Math.floor((timing / 60 / 60)) % 24;
 
     secondEl.innerHTML = (second < 10) ? "0" + second : second;
     minuteEl.innerHTML = (minute < 10) ? "0" + minute + ":" : minute + ":";
